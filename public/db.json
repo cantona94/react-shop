@@ -1,0 +1,100 @@
+{
+    "product": [
+        {
+            "id": 0,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/f9127faaa50fefa25347f8503a21b253/484109e04b9657e3871435521545d6a196e1daf424401b0a71ef89891dae988a.jpg",
+            "name": "ASUS Laptop E210MA",
+            "price": 18999,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 1,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/3bff073974f1442f1abf8c82dc7c94e9/f894472b278a875a18aff7f448139fee42857df9c541cef17728edbbecf906ee.jpg",
+            "name": "ASUS TUF Gaming",
+            "price": 65499,
+            "category": 0,
+            "rating": 6
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2ebf8a148ffa2eb56862be29ec52491d/2d4c04e2520c39cc597dfa2d552684e4164f4bef39c3fae7d5aeef3a86bbc6e2.jpg",
+            "name": "HP Pavilion Gaming",
+            "price": 59654,
+            "category": 1,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/30344fa068d6d14edf4242156fc203a7/41fbb0012918eb89be15f209addbb49912ee554576f157be471a9728f040d32c.jpg",
+            "name": "Apple MacBook Air",
+            "price": 104899,
+            "category": 2,
+            "rating": 2
+        },
+        {
+            "id": 4,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7ec9a6843965c77e8af86c529f831f30/7003cf06723a8d073a2792c4fe827d3872e8becf1f584a489f185dab6bd4d6b4.jpg",
+            "name": "Lenovo IdeaPad 3",
+            "price": 38999,
+            "category": 3,
+            "rating": 8
+        },
+        {
+            "id": 5,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/bad2b99e667bfdb54b10cf52a0250a83/9dc2950d00401f626d92064a22616213668910cb682de10402a04d9ebac294ee.jpg",
+            "name": "MSI GF75",
+            "price": 124999,
+            "category": 4,
+            "rating": 2
+        },
+        {
+            "id": 6,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st1/fit/500/500/9510e4a2ae2312fc83868276ceb1ec63/b49226ce39c544ef421a410ea54dad483b80eca6ca68311bd89188b5fe6505d8.jpg",
+            "name": "Lenovo IdeaPad S145",
+            "price": 34999,
+            "category": 3,
+            "rating": 10
+        },
+        {
+            "id": 7,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/e7e42913d5c8e518c7ceeff6f2600593/7353a4e034995b9e06ae5ac0e000877923f8f19268833455d07ebdb42fc24ee3.jpg",
+            "name": "HP OMEN 15",
+            "price": 99999,
+            "category": 1,
+            "rating": 10
+        },
+        {
+            "id": 8,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/b27a4fadc467a5595836019a86181cf8/958639e3928fa6b838bf6575dbf5677ab47577358cabba47c279b7fd11541666.jpg",
+            "name": "Apple MacBook Pro",
+            "price": 174799,
+            "category": 2,
+            "rating": 7
+        },
+        {
+            "id": 9,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/22681d3f9b363351535501a433a06ed2/ecc51cf025d9253292b8739dfb5cc8ed7ad09f1e3a629e3e36e92e96049be30e.jpg",
+            "name": "MSI GF65",
+            "price": 104999,
+            "category": 4,
+            "rating": 7
+        },
+        {
+            "id": 10,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8e11d24fb1393076246fe97b13ba3ac9/16405ee5467be58e2bef73bb8b1f98bb4bf2871a98ba67acc4db077acc2d908e.jpg",
+            "name": "ASUS TUF Dash F15",
+            "price": 89864,
+            "category": 0,
+            "rating": 5
+        },
+        {
+            "id": 11,
+            "imageUrl": "https://c.dns-shop.ru/thumb/st1/fit/500/500/8f3588c6440ca8fc9902d55a755e2533/2aea360b4ac330436b47f0f3edaae48d3a8bdac9ceb00fb4d1504c28a1c2821d.jpg",
+            "name": "Lenovo IdeaPad 3 Gaming",
+            "price": 52156,
+            "category": 3,
+            "rating": 10
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+  padding: 20px 0;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content {
+  padding: 40px 0;
+
+  &__items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+
+}
+
+
+.search {
+  margin-bottom: 10px;
+  height: 35px;
+  width: 650px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
