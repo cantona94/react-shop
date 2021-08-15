@@ -1,0 +1,65 @@
+@import '../variables';
+
+.botton-city {
+    padding: 5px;
+    border-radius: 8px;
+    color: $bloom;
+    background-color: white;
+    border: 0;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        background-color: darken(#f9f9f9, 2%);
+        text-decoration: underline;
+    }
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none; 
+    
+    .modal__content {
+        padding: 20px;
+        border-radius: 12px;
+        background-color: white;
+        height: 400px;
+        width: 400px;
+        transform: scale(0.5);
+        transition: 0.5s all;
+        
+
+        h4 {
+            padding-bottom: 30px;
+        }
+
+        a {
+            transition: background-color 0.1s ease-in-out;
+           
+            &:hover {
+                background-color: darken(#f9f9f9, 2%);
+                text-decoration: underline; 
+            }
+        }
+    }
+    
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.modal__content.active {
+    transform: scale(1);
+}
