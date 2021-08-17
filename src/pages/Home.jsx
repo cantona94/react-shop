@@ -1,5 +1,6 @@
 import React from 'react'
 import { Categories, SortPopup, ProductBlock } from '../components';
+import { useSelector, useDispatch } from 'react-redux';
 
 import axios from 'axios';
 
@@ -17,8 +18,9 @@ const sortItems = [
     { name: 'алфавиту', type: 'name', order: 'asc' }
 ];
 
-
 function Home() {
+    const dispatch = useDispatch();
+    const cartItems = useSelector(({ cart }) => cart.items);
 
     const [productsActive, setProducts] = React.useState({});
 
@@ -37,6 +39,13 @@ function Home() {
     const onSelectName = (name) => {
         setSearch(name)
     };
+
+    const handleAddProductToCart = obj => {
+        dispatch({
+            type: 'ADD_PRODUCT_CART',
+            payload: obj,
+        });
+    }
 
     const axiosProducts = (category, sort, search) => {
         axios.get((`/product?${category !== null ? `category=${category}` : ''}&name_like=${search}&_sort=${sort.type}&_order=${sort.order}`)).then(({ data }) => {
@@ -73,6 +82,8 @@ function Home() {
                     productsActive.length
                         ? productsActive.map((obj) => (
                             <ProductBlock
+                                onClickAddProduct={handleAddProductToCart}
+                                addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                                 key={obj.id}
                                 {...obj}
                             />))
