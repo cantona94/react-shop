@@ -4,4 +4,5 @@ export { default as Categories } from './Categories';
 export { default as SortPopup } from './SortPopup';
 export { default as CartItem } from './CartItem';
 export { default as ProductBlock } from './ProductBlock';
+export { default as CityModel } from './CityModel';
 export { default as GetCookie } from './GetCookie';

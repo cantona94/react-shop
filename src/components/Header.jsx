@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import { useSelector } from 'react-redux';
-import { CityModel } from './CityModel';
+import CityModel from './CityModel';
 import GetCookie from './GetCookie';
 
 const listCitys = [

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-export const CityModel = (function CityModel({ active, setActive, cityNames, toggleCityActive }) {
+const CityModel = function CityModel({ active, setActive, cityNames, toggleCityActive }) {
 
     const onCityTable = () => {
         setActive(false)
@@ -29,4 +29,6 @@ export const CityModel = (function CityModel({ active, setActive, cityNames, tog
             </div>
         </div>
     )
-});
+};
+
+export default CityModel;

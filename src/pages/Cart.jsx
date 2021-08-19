@@ -1,15 +1,38 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { CartItem } from '../components';
 
+import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../redux/actions/cart'
+
 function Cart() {
+    const dispatch = useDispatch();
     const { totalPrice, totalCount, items } = useSelector(({ cart }) => cart);
 
     const addedProducts = Object.keys(items).map(key => {
         return items[key].items[0];
     });
+
+    const onClearCart = () => {
+        if (window.confirm('Вы действительно хотите очистить корзину?')) {
+            dispatch(clearCart());
+        }
+    }
+
+    const onRemoveItem = (id) => {
+        if (window.confirm('Вы действительно хотите удалить ноутбук?')) {
+            dispatch(removeCartItem(id));
+        }
+    }
+
+    const onPlusItem = (id) => {
+        dispatch(plusCartItem(id));
+    }
+
+    const onMinusItem = (id) => {
+        dispatch(minusCartItem(id));
+    }
 
     return (
         <div className="content">
@@ -21,7 +44,7 @@ function Cart() {
                                 <h2 className="content__title">
                                     Корзина</h2>
                                 <div className="cart__clear">
-                                    <span>Очистить корзину</span>
+                                    <span onClick={onClearCart}>Очистить корзину</span>
                                 </div>
                             </div>
                             <div className="content__items">
@@ -33,7 +56,10 @@ function Cart() {
                                             name={obj.name}
                                             imageUrl={obj.imageUrl}
                                             totalPrice={items[obj.id].totalPrice}
-                                            totalCount={items[obj.id].items.length} s
+                                            totalCount={items[obj.id].items.length}
+                                            onRemove={onRemoveItem}
+                                            onPlus={onPlusItem}
+                                            onMinus={onMinusItem}
                                         />
                                     ))
                                 }
