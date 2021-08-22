@@ -1,8 +1,10 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import { CartItem } from '../components';
+import GetCookie from '../components/GetCookie';
 
 import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../redux/actions/cart'
 
@@ -32,6 +34,21 @@ function Cart() {
 
     const onMinusItem = (id) => {
         dispatch(minusCartItem(id));
+    }
+
+    const productNameToOrder = Object.keys(addedProducts).map(key => {
+        return addedProducts[key].name
+    })
+
+    const orderTime = new Date().toLocaleTimeString()
+
+    const addToOrder = () => {
+        const orderCity = GetCookie("city")
+        const newItems = {
+            orderCity, productNameToOrder, totalPrice, orderTime,
+        };
+        axios.post(`http://localhost:3002/orders`, newItems)
+        alert("Заказ оформлен!")
     }
 
     return (
@@ -71,11 +88,9 @@ function Cart() {
                                 </div>
                                 <div className="cart__bottom-buttons">
                                     <Link to="/" className="button button--outline button--add go-back-btn">
-
-
                                         <span>Вернуться назад</span>
                                     </Link>.
-                                    <div className="button pay-btn">
+                                    <div className="button pay-btn" onClick={() => addToOrder()}>
                                         <span>Оплатить сейчас</span>
                                     </div>
                                 </div>

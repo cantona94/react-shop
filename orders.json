@@ -1,0 +1,23 @@
+{
+  "orders": [
+    {
+      "orderCity": "Санкт-Петербург",
+      "productNameToOrder": [
+        "Lenovo IdeaPad S145",
+        "HP OMEN 15"
+      ],
+      "totalPrice": 134998,
+      "orderTime": "22:25:52",
+      "id": 1
+    },
+    {
+      "orderCity": "Санкт-Петербург",
+      "productNameToOrder": [
+        "Lenovo IdeaPad 3 Gaming"
+      ],
+      "totalPrice": 52156,
+      "orderTime": "22:27:25",
+      "id": 2
+    }
+  ]
+}
